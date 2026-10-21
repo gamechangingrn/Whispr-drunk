@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T00:00:00+05:30",
+  "title": "Design System: Willfull",
+  "extensions": {
+    "colorMeta": {
+      "forest": {
+        "role": "primary",
+        "displayName": "Forest",
+        "canonical": "#315c42",
+        "tonalRamp": [
+          "#14251b",
+          "#203e2b",
+          "#315c42",
+          "#487857",
+          "#669471",
+          "#91b395",
+          "#c1d4bc",
+          "#edf4e8"
+        ]
+      },
+      "warm-canvas": {
+        "role": "neutral",
+        "displayName": "Warm Canvas",
+        "canonical": "#fcfcf9",
+        "tonalRamp": [
+          "#252b28",
+          "#444b43",
+          "#687063",
+          "#8f9787",
+          "#b6bda9",
+          "#d4dacb",
+          "#edf0e7",
+          "#fcfcf9"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Desktop headline",
+        "purpose": "A single concise page title."
+      },
+      "body": {
+        "displayName": "Written output",
+        "purpose": "Selectable transcripts and saved text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "dialog",
+        "value": "0 20px 90px #18291230",
+        "purpose": "Protected-focus command review."
+      },
+      {
+        "name": "toast",
+        "value": "0 6px 25px #22311b20",
+        "purpose": "Transient action feedback."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Short state transitions."
+      },
+      {
+        "name": "control-duration",
+        "value": "160ms",
+        "purpose": "Hover, focus, and switch feedback."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1350px"
+      },
+      {
+        "name": "compact",
+        "value": "1040px"
+      },
+      {
+        "name": "narrow",
+        "value": "850px"
+      },
+      {
+        "name": "short-height",
+        "value": "720px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The next meaningful action.",
+      "html": "<button class=\"ds-primary\">Start dictation</button>",
+      "css": ".ds-primary{font:550 12px 'DM Sans Variable',sans-serif;background:#315c42;color:#fff;border:1px solid transparent;border-radius:7px;padding:10px 15px;min-height:38px;cursor:pointer;transition:background 160ms cubic-bezier(.16,1,.3,1)}.ds-primary:hover{background:#254a34}.ds-primary:focus-visible{outline:3px solid #8aa58b;outline-offset:3px}.ds-primary:active{transform:translateY(1px)}"
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A useful alternative beside a primary action.",
+      "html": "<button class=\"ds-secondary\">Copy transcript</button>",
+      "css": ".ds-secondary{font:550 12px 'DM Sans Variable',sans-serif;background:#fff;color:#4f5a49;border:1px solid #dde2d6;border-radius:7px;padding:10px 15px;cursor:pointer}.ds-secondary:hover{background:#f1f4ec;border-color:#bcc6b3}.ds-secondary:focus-visible{outline:3px solid #8aa58b;outline-offset:3px}.ds-secondary:active{transform:translateY(1px)}"
+    },
+    {
+      "name": "Text input",
+      "kind": "input",
+      "description": "Ordinary input with a quiet focus state.",
+      "html": "<label class=\"ds-label\">Preferred spelling<input class=\"ds-input\" placeholder=\"e.g. Willfull\" /></label>",
+      "css": ".ds-label{display:flex;flex-direction:column;gap:8px;font:500 11px 'DM Sans Variable',sans-serif;color:#526a43}.ds-input{font:400 12px 'DM Sans Variable',sans-serif;color:#252b28;background:#fff;border:1px solid #dce1d6;border-radius:7px;padding:10px 12px;caret-color:#315c42}.ds-input::placeholder{color:#6b7268}.ds-input:hover{border-color:#b8c2b1}.ds-input:focus-visible{outline:3px solid #8aa58b;outline-offset:3px;border-color:#819b7b}"
+    },
+    {
+      "name": "Navigation selection",
+      "kind": "nav",
+      "refersTo": "navigation-selected",
+      "description": "Persistent sidebar navigation.",
+      "html": "<button class=\"ds-nav\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\"><path d=\"m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z\"/></svg>Home</button>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:12px;width:180px;min-height:42px;padding:0 13px;background:#e3eadf;color:#2b513a;border:0;border-radius:7px;font:600 13px 'DM Sans Variable',sans-serif;cursor:pointer}.ds-nav:hover{background:#d9e3d3}.ds-nav:focus-visible{outline:3px solid #8aa58b;outline-offset:3px}"
+    },
+    {
+      "name": "Model status",
+      "kind": "chip",
+      "description": "A meaningful model lifecycle state.",
+      "html": "<span class=\"ds-status\"><span></span>Installed · idle</span>",
+      "css": ".ds-status{display:inline-flex;align-items:center;gap:5px;background:#eff5e8;color:#4d7740;border:1px solid #dce7d2;border-radius:4px;padding:4px 6px;font:500 11px 'DM Sans Variable',sans-serif}.ds-status>span{width:4px;height:4px;border-radius:50%;background:currentColor}"
+    },
+    {
+      "name": "Dictation workspace",
+      "kind": "card",
+      "refersTo": "dictation-workspace",
+      "description": "One contained primary task with a differentiated transcript surface.",
+      "html": "<section class=\"ds-workspace\"><div class=\"ds-capture\">Put your voice to work.</div><div class=\"ds-output\">Your words will appear here.</div></section>",
+      "css": ".ds-workspace{overflow:hidden;border:1px solid #e0e5d8;border-radius:12px;background:#fff;font-family:'DM Sans Variable',sans-serif}.ds-capture{padding:38px 25px;text-align:center;font-size:21px;color:#252b28}.ds-output{padding:18px 22px;background:#fafbf7;border-top:1px solid #edf0e7;color:#66705d;font-size:11px;line-height:1.7}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A quiet writing desk",
+    "overview": "Willfull is an operational desktop tool. A warm canvas, a slim sage sidebar, deep ink, and a restrained forest accent give recording state and written output the clearest places in the interface. The voice workspace leads; management views use direct lists and inline forms.",
+    "keyCharacteristics": [
+      "Warm neutral surfaces and a single forest action color.",
+      "One bundled type family with a fixed desktop scale.",
+      "Recording and processing state remain visible.",
+      "Inline management, recoverable text, and deliberate command review."
+    ],
+    "rules": [
+      {
+        "name": "The Action Color Rule",
+        "body": "Use forest for actionable emphasis and meaningful state, with a muted neutral vocabulary for supporting information.",
+        "section": "colors"
+      },
+      {
+        "name": "The Written Output Rule",
+        "body": "Preserve whitespace and wrap long words in dictation, snippet, and command text. Written content should remain selectable, readable, and recoverable.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Do render actual desktop state, real model setup progress, and explicit disconnected states.",
+      "Do use direct list rows for saved words, snippets, history, and model status.",
+      "Do keep the microphone state, cancel control, and latest result easy to find.",
+      "Do preserve selectable text and visibly communicate insertion failures."
+    ],
+    "donts": [
+      "Don't invent successful setup, transcripts, hardware readings, or usage statistics.",
+      "Don't add a dashboard of repeated feature cards to an operational view.",
+      "Don't auto-apply a command edit from a foreground preview window.",
+      "Don't load fonts or visual dependencies from a remote service at runtime."
+    ]
+  }
+}

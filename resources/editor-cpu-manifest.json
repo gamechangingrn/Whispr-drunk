@@ -1,0 +1,21 @@
+{
+  "model": {
+    "name": "Qwen3.5 2B · Q4_K_M · CPU",
+    "file": "Qwen3.5-2B-Q4_K_M.gguf",
+    "url": "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/f6d5376be1edb4d416d56da11e5397a961aca8ae/Qwen3.5-2B-Q4_K_M.gguf",
+    "bytes": 1280835840,
+    "sha256": "aaf42c8b7c3cab2bf3d69c355048d4a0ee9973d48f16c731c0520ee914699223",
+    "source": "Qwen/Qwen3.5-2B",
+    "quantizer": "unsloth/Qwen3.5-2B-GGUF",
+    "revision": "f6d5376be1edb4d416d56da11e5397a961aca8ae",
+    "license": "Apache-2.0"
+  },
+  "runtime": {
+    "name": "llama.cpp b11756 · Windows x64 CPU / Vulkan",
+    "file": "llama-b11756-bin-win-vulkan-x64.zip",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11756/llama-b11756-bin-win-vulkan-x64.zip",
+    "bytes": 36751610,
+    "sha256": "75ce69fdda503c3d6d3b3401f61369bd072194746ec65fbbc5fd7e749edd2914",
+    "license": "MIT"
+  }
+}

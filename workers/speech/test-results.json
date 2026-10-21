@@ -1,0 +1,178 @@
+{
+  "passed": true,
+  "scope": "Three real public English audio fixtures; streaming, cancellation and silence. Not a microphone/accent benchmark.",
+  "runtime": "Embedded Python 3.12.10 / Fermion 0.2.12 / torch 2.9.1+cpu",
+  "load": {
+    "loaded": true,
+    "loading": false,
+    "model": "Phonon-2",
+    "backend": "cpu-packed",
+    "threads": 6,
+    "loadSeconds": 1.319751399976667,
+    "memory": {
+      "workingSetBytes": 922578944,
+      "privateBytes": 959225856,
+      "peakWorkingSetBytes": 943529984,
+      "peakPrivateBytes": 959225856
+    },
+    "selftest": {
+      "shipped": {
+        "gemm": true,
+        "tdt": true,
+        "enc": true
+      },
+      "gemm_loaded": true,
+      "tdt_loaded": true,
+      "enc_loaded": true,
+      "glibc_note": null
+    },
+    "decode": {
+      "five_value_modules": 264,
+      "threads": 6,
+      "packed": {
+        "modules": 264,
+        "kernel_id": 3,
+        "kernel": "avx2",
+        "tier": "avx2",
+        "library": "phonon2_enc-windows-x64.dll",
+        "onedot": true,
+        "plane_cache": "direct"
+      },
+      "model_impl": "none (C engine)",
+      "selftest": {
+        "shipped": {
+          "gemm": true,
+          "tdt": true,
+          "enc": true
+        },
+        "gemm_loaded": true,
+        "tdt_loaded": true,
+        "enc_loaded": true,
+        "glibc_note": null
+      }
+    },
+    "activeSessions": 0
+  },
+  "fixtures": [
+    {
+      "fixture": "4077-13754-0014.wav",
+      "sha256": "9f448a7289009ea2cbe3d1a0dfff4021afa11d6c0a07c78b6bc7f032f81a8d6c",
+      "reference": "THE PEOPLE CONTESTED THESE MEASURES ONE BY ONE IN THE COURTS PRESENTING IN CASE AFTER CASE THE DIFFERENT PHASES OF THE SUBJECT AND URGING THE UNCONSTITUTIONALITY OF THE MEASURE",
+      "text": "The people contested these measures one by one in the courts, presenting in case after case the different phases of the subject, and urging the unconstitutionality of the measure.",
+      "wordErrors": 0,
+      "referenceWords": 29,
+      "audioSeconds": 10.97,
+      "decodeSeconds": 0.2322446999605745,
+      "memory": {
+        "workingSetBytes": 965316608,
+        "privateBytes": 994951168,
+        "peakWorkingSetBytes": 980926464,
+        "peakPrivateBytes": 1035567104
+      }
+    },
+    {
+      "fixture": "5105-28240-0004.wav",
+      "sha256": "380f84db7e276f95e0ae03e703bbcebc5721da9084c654d9c3157a080aa6e8ee",
+      "reference": "IF THE COUNT WERE ON BOARD A STRANGE FATALITY WAS BRINGING HIM TO THE PRESENCE OF HIS RIVAL",
+      "text": "If the Count were on board, a strange fatality was bringing him to the presence of his rival.",
+      "wordErrors": 0,
+      "referenceWords": 18,
+      "audioSeconds": 6.015,
+      "decodeSeconds": 0.12895889999344945,
+      "memory": {
+        "workingSetBytes": 965062656,
+        "privateBytes": 993804288,
+        "peakWorkingSetBytes": 980926464,
+        "peakPrivateBytes": 1035567104
+      }
+    },
+    {
+      "fixture": "5639-40744-0013.wav",
+      "sha256": "c255cfa30c8514faddd968908563df43067c426e38db03f71a39ede049c0dfbd",
+      "reference": "SHE SAW THAT THE BED WAS GILDED AND SO RICH THAT IT SEEMED THAT OF A PRINCE RATHER THAN OF A PRIVATE GENTLEMAN",
+      "text": "She saw that the bed was gilded, and so rich that it seemed that of a prince rather than of a private gentleman.",
+      "wordErrors": 0,
+      "referenceWords": 23,
+      "audioSeconds": 6.865,
+      "decodeSeconds": 0.14281350001692772,
+      "memory": {
+        "workingSetBytes": 965029888,
+        "privateBytes": 994238464,
+        "peakWorkingSetBytes": 980926464,
+        "peakPrivateBytes": 1035567104
+      }
+    }
+  ],
+  "stream": {
+    "text": "If the Count were on board, a strange fatality was bringing him to the presence of his rival.",
+    "sessionId": "stream-fixture",
+    "audioSeconds": 6.015,
+    "elapsedSeconds": 0.6877836000057869,
+    "memory": {
+      "workingSetBytes": 965967872,
+      "privateBytes": 996823040,
+      "peakWorkingSetBytes": 980926464,
+      "peakPrivateBytes": 1035567104
+    },
+    "releaseToFinalSeconds": 0.4163461999851279
+  },
+  "cancelResponseSeconds": 0.00032269995426759124,
+  "silenceText": "",
+  "status": {
+    "loaded": true,
+    "loading": false,
+    "model": "Phonon-2",
+    "backend": "cpu-packed",
+    "threads": 6,
+    "loadSeconds": 1.319751399976667,
+    "memory": {
+      "workingSetBytes": 965685248,
+      "privateBytes": 995667968,
+      "peakWorkingSetBytes": 980926464,
+      "peakPrivateBytes": 1035567104
+    },
+    "selftest": {
+      "shipped": {
+        "gemm": true,
+        "tdt": true,
+        "enc": true
+      },
+      "gemm_loaded": true,
+      "tdt_loaded": true,
+      "enc_loaded": true,
+      "glibc_note": null
+    },
+    "decode": {
+      "five_value_modules": 264,
+      "threads": 6,
+      "packed": {
+        "modules": 264,
+        "kernel_id": 3,
+        "kernel": "avx2",
+        "tier": "avx2",
+        "library": "phonon2_enc-windows-x64.dll",
+        "onedot": true,
+        "plane_cache": "direct"
+      },
+      "model_impl": "none (C engine)",
+      "selftest": {
+        "shipped": {
+          "gemm": true,
+          "tdt": true,
+          "enc": true
+        },
+        "gemm_loaded": true,
+        "tdt_loaded": true,
+        "enc_loaded": true,
+        "glibc_note": null
+      }
+    },
+    "activeSessions": 0
+  },
+  "elapsedSeconds": 3.58979709999403,
+  "stderr": [
+    "[speech] loading packed CPU engine",
+    "[fermion] decode backend: cpu \u00b7 local model",
+    "[speech] packed engine ready in 1.32s"
+  ]
+}
